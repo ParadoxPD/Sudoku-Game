@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #282c34;
     height: 100%;
 }
 
@@ -16,8 +16,8 @@ div {
     float: left;
     width: 33.3%;
     padding-bottom: 33.3%;
-    border: 1px solid gray;
-    background-color: #9cc;
+    border: 4px solid #2c3e50;
+    background-color: #34495e;
 }
 
 .outer-square {
@@ -26,7 +26,7 @@ div {
     top: 0;
     width: 90%;
     height: 90%;
-    background-color: #ccc;
+    background-color: #34495e;
     margin: 5%;
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
@@ -37,7 +37,7 @@ div {
 .inner-grid {
     width: 33.3%;
     height: 33.3%;
-    border: 1px solid red;
+    border: 1px solid white;
     display: table;
 }
 
@@ -48,6 +48,13 @@ div {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    color: white;
+}
+
+.inner-square:hover {
+    cursor: pointer;
+    background-color: #282c34;
+    transition: all 0.3s ease;
 }
 
 .grid-container {
@@ -56,6 +63,7 @@ div {
     height: 100%;
     margin: auto;
     padding-top: 20vh;
+
 
 
 }
